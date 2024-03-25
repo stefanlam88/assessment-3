@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Image</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Center content vertically using Flexbox */
+        .container {
+            width: 700px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Vertically center content */
+            align-items: center; /* Horizontally center content */
+            background-image: url('<%= imageUrl %>'); /* Set background image */
+            background-size: cover; /* Cover entire container */
+            background-position: center; /* Center the background image */
+            padding: 20px; /* Add padding for spacing */
+            text-align: center; /* Align text center */
+        }
+        /* Set image size */
+        img {
+            max-width: 700px;
+            max-height: 400px;
+        }
+        /* Red color for title */
+        .title {
+            color: red;
+            margin-bottom: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+
+       
+        <h1 class="title"><%= title %></h1>
+        <p><%= description %></p>
+       
+    </div>
+</body>
+</html>
